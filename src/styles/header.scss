@@ -1,0 +1,40 @@
+
+.header-top-container{
+    border-bottom: 1px solid #f2f2f2;
+    .header-top{
+        padding: 15px 0;
+        .logo-container{
+            height: 45px;
+            img{
+                height: 100%;
+            }
+        }
+        .search-bar{
+            height: 45px;
+            input{
+                height: 100%;
+            }
+        }
+    }
+}
+.header-bottom-container{
+    ul{
+        list-style-type: none;
+        padding: 24px 0;
+        li{
+            padding: 0 10px;
+        }
+    }
+}
+
+.promo-services{
+    background-image: url("../assets/bg-transparent-3.png");
+    background-color: #1e3120;
+    ul{
+        list-style-type: none;
+        height: 64px;
+        li{
+            color: white;
+        }
+    }
+}
