@@ -28,7 +28,8 @@
         <nav>
           <ul class="d-flex justify-content-center mb-0">
             <li v-for="(el, i) in navPrincipale" :key="i">
-              {{ el.title }}
+              <a :href="el.link">{{ el.title }}</a>
+
               <i
                 v-if="el.type === 'drop'"
                 class="fa fa-chevron-down"
@@ -41,7 +42,7 @@
     </div>
     <div class="promo-services">
       <div class="container">
-        <ul class="d-flex justify-content-around align-items-center">
+        <ul class="d-flex justify-content-around align-items-center mb-0">
           <li>
             <i class="fa fa-map-o" aria-hidden="true"></i> international
             Shipping Services
