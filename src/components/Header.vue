@@ -17,8 +17,12 @@
             <span>Call us :1800123.4567</span>
           </div>
           <div>
-            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-            <i class="ps-3 fa fa-user-o" aria-hidden="true"></i>
+            <a href="#" class="text-black">
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="text-black">
+              <i class="ps-3 fa fa-user-o" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -28,13 +32,15 @@
         <nav>
           <ul class="d-flex justify-content-center mb-0">
             <li v-for="(el, i) in navPrincipale" :key="i">
-              <a :href="el.link">{{ el.title }}</a>
+              <a :href="el.link"
+                >{{ el.title }}
 
-              <i
-                v-if="el.type === 'drop'"
-                class="fa fa-chevron-down"
-                aria-hidden="true"
-              ></i>
+                <i
+                  v-if="el.type === 'drop'"
+                  class="fa fa-chevron-down"
+                  aria-hidden="true"
+                ></i>
+              </a>
             </li>
           </ul>
         </nav>
@@ -44,16 +50,17 @@
       <div class="container">
         <ul class="d-flex justify-content-around align-items-center mb-0">
           <li>
-            <i class="fa fa-map-o" aria-hidden="true"></i> international
+            <i class="pe-2 fa fa-map-o" aria-hidden="true"></i
+            ><strong>international</strong>
             Shipping Services
           </li>
           <li>
-            <i class="fa fa-clock-o" aria-hidden="true"></i> See our
+            <i class="pe-1 fa fa-clock-o" aria-hidden="true"></i> See our
             <strong>store houses</strong> and services
           </li>
           <li>
-            <i class="fa fa-check" aria-hidden="true"></i> We price match to
-            give you the <strong>best deals</strong>
+            <i class="pe-1 fa fa-check" aria-hidden="true"></i> We price match
+            to give you the <strong>best deals</strong>
           </li>
         </ul>
       </div>

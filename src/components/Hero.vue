@@ -1,23 +1,28 @@
 <template>
-  <div class="hero">
-    <div class="hero-overlay">
-      <div class="container">
-        <div class="hero-text-container">
-          <small>find the best anima supplies</small>
-          <h1>
-            We know animals are a part of yiur family, let us help take care of
-            them.
-          </h1>
+  <div class="hero" :class="contentHero.bgHero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div :class="contentHero.align">
+        <small>{{ contentHero.subTitle }}</small>
+        <h1>
+          {{ contentHero.title }}
+        </h1>
 
-          <button>Learn more about us</button>
-        </div>
+        <button>
+          <strong>{{ contentHero.btnText }}</strong>
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Hero",
+  props: {
+    contentHero: Object,
+  },
+};
 </script>
 
 <style lang="scss">

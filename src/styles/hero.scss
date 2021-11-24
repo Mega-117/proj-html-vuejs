@@ -1,14 +1,56 @@
-.hero{
+.bg-hero{
     background-image: url("../assets/banner-5-2x-scaled.jpg");
     height: 770px;
+}
+.bg-hero-2{
+    background-image: url("../assets/banner-3-2x-scaled.jpg");
+    height: 520px;
+}
+.bg-hero-3{
+    background-image: url("../assets/banner-7-2x-scaled.jpg");
+    height: 520px;
+}
+.bg-hero-4{
+    background-image: url("../assets/banner-8-2x.jpg");
+    height: 520px;
+}
+.bg-hero-5{
+    background-image: url("../assets/banner-9-2x.jpg");
+    height: 520px;
+}
+
+.hero{
+    
     background-size: cover;
     
     
     .hero-overlay{
         background-color: black;
-        opacity: 0.5;
-        height: 100%;
+        opacity: 0.3;
+        height: 100%;}
         position: relative;
+        .hero-text-container-center{
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            width: 45%;
+            color: white;
+            text-align: center;
+            small{
+                text-transform: uppercase;
+            }
+            h1{
+                font-size: 50px;
+                font-family: "Times New Roman";
+                margin: 40px 0 45px;
+                opacity: 1;
+            }
+            button{
+                border-radius: 30px;
+                padding: 10px 25px 12px;
+            }
+        }
         .hero-text-container{
             position: absolute;
             top: 50%;
@@ -24,8 +66,7 @@
             }
             button{
                 border-radius: 30px;
-                padding: 10px 15px;
+                padding: 10px 25px 12px;
             }
         }
     }
-}

@@ -2,13 +2,92 @@
     background-image: url("../assets/bg-transparent-3.png");
     background-color: #1e3120;
     padding-top: 27px;
-    font-size: 20px;
+    font-size: 22px;
     span{
         color: white;
         
         padding: 0 35px;
     }
     a{
+        font-size: 20px;
         color: #bcc2bd;
     }
+}
+
+.categoty-secion{
+    padding: 103px 0;
+    button{
+        border-radius: 30px;
+        padding: 10px 25px 12px;
+    }
+}
+.animal-food{
+    margin-bottom: 110px;
+        .bg-dog{
+            background-image: url("../assets/bg-transparent-3.png");
+        background-color: #1e3120;
+        .text-box{
+            color: white;
+        }
+        .text-box{
+            text-align: center;
+        }
+        .product{
+            width: 70%;
+            img{
+                width: 100%;
+            }
+        }
+        button{
+            padding: 10px 25px;
+            border-radius: 25px;
+        };
+    }
+}
+
+
+.bg-newsletter{
+    background-image: url("../assets/banner-7-2x-scaled.jpg");
+    background-size: cover;
+    height: 500px;
+    transform: translateY(-80px);
+/*     border: 1px solid red;
+ */    .newsletter-text{
+        padding-left: 100px;
+        width: 55%;
+        h1{
+            font-family: "Times New Roman";
+            font-size: 46px;
+            margin-bottom: 45px;
+        }
+        p{
+            margin-bottom: 65px;
+            font-size: 18px;
+        }
+        input, button{
+            height: 55px;
+            border-radius: 30px;
+            padding: 0 25px;
+        }
+        input{
+            margin-right: 20px;
+            width: 420px;
+        }
+    }
+}
+
+.riga{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+.colonna1, .colonna2{
+    width: 50%;
+}
+.bg-dog{
+    background-image: url("../assets/bg-transparent-3.png");
+    background-color: #1e3120;
+}
+.logo-footer{
+    margin-bottom: 50px;
 }

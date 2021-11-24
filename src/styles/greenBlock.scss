@@ -1,0 +1,36 @@
+.bg-dog{
+    background-image: url("../assets/bg-transparent-3.png");
+background-color: #1e3120;}
+.testimonials{
+    padding-top: 130px;
+    padding-bottom: 195px;
+    h1{
+        margin-bottom: 81px;
+    }
+    p{  
+        font-size: 18px;
+        margin-bottom: 35px;
+        padding: 0 42px;
+    }
+    .img-container{
+        margin-bottom: 30px;
+        .overlay{
+            width: 100px;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+            
+        }
+    }
+}
+.servizzi{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    i{
+        font-size: 70px;
+        margin-bottom: 30px;
+    }
+}
