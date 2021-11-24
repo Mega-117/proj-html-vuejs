@@ -8,7 +8,7 @@
           {{ contentHero.title }}
         </h1>
 
-        <button>
+        <button class="btn-1">
           <strong>{{ contentHero.btnText }}</strong>
         </button>
       </div>

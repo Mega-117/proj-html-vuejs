@@ -40,9 +40,13 @@
               </div>
 
               <form action="" class="">
-                <input type="text" placeholder="insert your email...*" />
+                <input
+                  class="bg-grey-input"
+                  type="text"
+                  placeholder="insert your email...*"
+                />
                 <br />
-                <button>Submit</button>
+                <button class="btn-2">Submit</button>
               </form>
             </div>
           </div>

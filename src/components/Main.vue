@@ -12,6 +12,7 @@
         </div>
       </div>
     </div>
+
     <!-- category-product -->
     <div>
       <div class="container">
@@ -22,6 +23,7 @@
       </div>
     </div>
     <!-- fine category-product -->
+
     <!-- food card -->
     <div>
       <div class="container">
@@ -29,7 +31,14 @@
           <div class="row row-cols-3 gx-5">
             <div v-for="(el, i) in foodList" :key="i" class="col">
               <div
-                class="card bg-dog d-flex flex-column align-items-center py-5"
+                class="
+                  food-card
+                  bg-dog
+                  d-flex
+                  flex-column
+                  align-items-center
+                  py-5
+                "
               >
                 <div class="text-box">
                   <h2>{{ el.title }}</h2>
@@ -38,7 +47,7 @@
                 <div class="product">
                   <img :src="el.src" alt="" />
                 </div>
-                <button>
+                <button class="btn-2">
                   <strong>{{ el.btnText }}</strong>
                 </button>
               </div>
@@ -48,6 +57,7 @@
       </div>
     </div>
     <!-- fine food card -->
+
     <!-- hero 2 -->
     <div>
       <div class="container">
@@ -55,6 +65,7 @@
       </div>
     </div>
     <!-- fine hero 2 -->
+
     <!-- best sellers -->
     <div>
       <div class="container">
@@ -62,36 +73,19 @@
           <IntroSection :content="introSection[1]"></IntroSection>
           <CardProduct
             :products="productBestSellerList"
-            :columnNumber="Col4"
+            :columnNumber="col4"
           ></CardProduct>
         </section>
       </div>
     </div>
     <!-- finebest sellers -->
+
     <!-- testimonials -->
-    <!-- <div class="bg-dog testimonials">
-      <div class="container">
-        <div class="text-white text-center"><h1>Users testimonials</h1></div>
-        <div class="row">
-          <div v-for="(el, i) in testimonials" :key="i" class="col">
-            <div class="text-white text-center">
-              <div class="img-container d-flex justify-content-center">
-                <div class="overlay">
-                  <img :src="el.src" alt="" />
-                </div>
-              </div>
-              <p>
-                {{ el.text }}
-              </p>
-              <small>{{ el.name }}</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
+
     <GreenBlock :content="testimonials"></GreenBlock>
 
     <!-- fine testimonials -->
+
     <!-- hero 3 -->
     <div>
       <div class="container">
@@ -103,8 +97,12 @@
               libero viverra vehicula nullam ut nisl.
             </p>
             <form action="">
-              <input type="text" placeholder="insert your email...*" />
-              <button><strong>Subscribe</strong></button>
+              <input
+                class="bg-grey-input"
+                type="text"
+                placeholder="insert your email...*"
+              />
+              <button class="btn-2"><strong>Subscribe</strong></button>
             </form>
           </div>
         </div>
@@ -118,14 +116,15 @@
       <div class="container">
         <section class="categoty-secion">
           <IntroSection :content="introSection[2]"></IntroSection>
-          <CardProduct :products="tipTrick"></CardProduct>
+          <CardProduct :products="tipTrick" :columnNumber="col4"></CardProduct>
           <div class="text-center">
-            <button>Read all article</button>
+            <button class="btn-2">Read all article</button>
           </div>
         </section>
       </div>
     </div>
     <!-- fine tip e trick -->
+
     <!-- doble hero -->
     <div class="doble-hero">
       <div class="riga">
@@ -140,9 +139,11 @@
       </div>
     </div>
     <!-- fine doble hero -->
+
     <!-- promo service -->
     <GreenBlock :content="promeService"></GreenBlock>
     <!-- fine promo service -->
+
     <!-- new arrive -->
     <div>
       <div class="container">
@@ -150,7 +151,7 @@
           <IntroSection :content="introSection[3]"></IntroSection>
           <CardProduct
             :products="productsNewArival"
-            :columnNumber="Col3"
+            :columnNumber="col3"
           ></CardProduct>
         </section>
       </div>
@@ -170,7 +171,7 @@ export default {
   data() {
     return {
       col4: "row-cols-4",
-      Col3: "row-cols-3",
+      col3: "row-cols-3",
       productList: [
         {
           src: require("@/assets/product-9-400x400.jpg"),
@@ -198,21 +199,25 @@ export default {
           src: require("@/assets/blog-1-400x400.jpg"),
           text: "How to 'loose leash walk' your dog",
           dataText: "April 21st, 2020",
+          textOverlay2: "Tip & Tricks",
         },
         {
           src: require("@/assets/blog-2-400x400.jpg"),
           text: "Stop cats from scratching furniture",
           dataText: "April 19th, 2020",
+          textOverlay2: "Tip & Tricks",
         },
         {
           src: require("@/assets/blog-3-200x200.jpg"),
           text: "Where to buy the best pet food",
           dataText: "April 18th, 2020",
+          textOverlay2: "Tip & Tricks",
         },
         {
           src: require("@/assets/blog-4-200x200.jpg"),
           text: "Proper care for your pet toys",
           dataText: "April 17th, 2020",
+          textOverlay2: "Tip & Tricks",
         },
       ],
       productBestSellerList: [
@@ -221,12 +226,14 @@ export default {
           text: "Transport cage",
           price: "$25.00",
           alignText: "text-center",
+          textOverlay: "VIEW CART",
         },
         {
           src: require("@/assets/product-20-400x400.jpg"),
           text: "Dog leash",
           price: "$25.00",
           alignText: "text-center",
+          textOverlay: "VIEW CART",
         },
         {
           src: require("@/assets/product-16-400x400.jpg"),
@@ -234,12 +241,14 @@ export default {
           price: "$25.00",
           scount: "$35.00",
           alignText: "text-center",
+          textOverlay: "VIEW CART",
         },
         {
           src: require("@/assets/product-11-400x400.jpg"),
           text: "Colorful cat leash",
           price: "$12.00",
           alignText: "text-center",
+          textOverlay: "VIEW CART",
         },
       ],
       introSection: [
@@ -380,12 +389,14 @@ export default {
           price: "$18.00",
           price2: "- $26.00",
           alignText: "text-center",
+          textOverlay: "VIEW CART",
         },
         {
           src: require("@/assets/product-2-400x400.jpg"),
           text: "Colorful ball set",
           price: "$29.00",
           alignText: "text-center",
+          textOverlay: "VIEW CART",
         },
         {
           src: require("@/assets/product-3-400x400.jpg"),
@@ -393,24 +404,28 @@ export default {
           price: "$18.00",
           scount: "$29.00",
           alignText: "text-center",
+          textOverlay: "VIEW CART",
         },
         {
           src: require("@/assets/product-4-400x400.jpg"),
           text: "Animal transport bag",
           price: "$29.00",
           alignText: "text-center",
+          textOverlay: "VIEW CART",
         },
         {
           src: require("@/assets/product-5-400x400.jpg"),
           text: "Animal transport cage",
           price: "$35.00",
           alignText: "text-center",
+          textOverlay: "VIEW CART",
         },
         {
           src: require("@/assets/product-10-400x400.jpg"),
           text: "Animal transport cage",
           price: "$16.00",
           alignText: "text-center",
+          textOverlay: "VIEW CART",
         },
       ],
     };

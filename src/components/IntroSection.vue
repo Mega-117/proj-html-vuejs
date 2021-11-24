@@ -10,7 +10,7 @@
           </p>
           <small>{{ content.dataText }}</small>
         </div>
-        <button v-if="content.btnText">
+        <button class="btn-2" v-if="content.btnText">
           <strong>{{ content.btnText }}</strong>
         </button>
       </div>

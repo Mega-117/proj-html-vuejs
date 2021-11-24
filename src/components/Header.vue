@@ -7,14 +7,16 @@
           class="header-top d-flex justify-content-between align-items-center"
         >
           <div class="logo-container">
-            <img src="../assets/dark-pet-logo.png" alt="" />
+            <a href="#">
+              <img src="../assets/dark-pet-logo.png" alt="" />
+            </a>
           </div>
           <div class="search-bar">
-            <input type="text" placeholder="Search..." />
+            <input class="bg-grey-input" type="text" placeholder="Search..." />
           </div>
           <div>
             <h5 class="d-inline-block pe-2">Questions?</h5>
-            <span>Call us :1800123.4567</span>
+            <span>Call us: 1800123.4567</span>
           </div>
           <div>
             <a href="#" class="text-black">

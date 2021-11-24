@@ -1,2 +1,26 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~font-awesome/css/font-awesome.min.css";
+.btn-1 {
+    background-color: white;
+    color: black;
+    border: 0px;
+  }
+  .btn-1:hover {
+    background-color: #3d6f42;
+    color: white;
+    border: 0px;
+  }
+.btn-2 {
+    background-color: #3d6f42;
+    color: white;
+    border: 0px;
+  }
+.btn-2:hover {
+    background-color: #2a542a;
+    color: white;
+  }
+.bg-grey-input{
+    background-color: #f3f4f3;
+    border: 0;
+}
+
