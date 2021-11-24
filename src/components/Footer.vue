@@ -99,11 +99,12 @@
               "
             >
               <button class="bnt-up-container">
-                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                <a href="#">
+                  <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                </a>
               </button>
-              <a href="#">
-                <i class="fa fa-copyright" aria-hidden="true"></i>
-              </a>
+
+              <i class="pe-2 fa fa-copyright" aria-hidden="true"></i>
               <span>
                 Copyright 2012 - 2020 | avada Theme by ThemeFusion | All Rights
                 Reserved | Powered by WordPress</span
