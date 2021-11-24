@@ -90,8 +90,20 @@
       <div class="container">
         <div class="row footer-bottom">
           <div class="col">
-            <div class="footer-bottom-text-block">
-              <i class="fa fa-copyright" aria-hidden="true"></i>
+            <div
+              class="
+                footer-bottom-text-block
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+            >
+              <button class="bnt-up-container">
+                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+              </button>
+              <a href="#">
+                <i class="fa fa-copyright" aria-hidden="true"></i>
+              </a>
               <span>
                 Copyright 2012 - 2020 | avada Theme by ThemeFusion | All Rights
                 Reserved | Powered by WordPress</span
@@ -193,9 +205,18 @@ ul.list-footer {
 
   .footer-bottom {
     height: 80px;
+    position: relative;
     .footer-bottom-text-block {
       text-align: center;
-      line-height: 80px;
+      height: 100%;
+      button {
+        height: 30px;
+        width: 50px;
+        border-radius: 5px 10px 0 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
     }
   }
 }
