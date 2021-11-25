@@ -3,12 +3,15 @@
     <div v-for="(element, i) in products" :key="i" class="col">
       <div class="card-product">
         <div class="img-product">
+          <div v-if="element.sale === true" class="sale">
+            <span>Sale!</span>
+          </div>
           <div
             v-if="element.textOverlay2 || element.textOverlay"
             class="overlay-product"
           >
             <div v-if="element.textOverlay2" class="overlay-product-2">
-              <h5>{{ element.text }}</h5>
+              <h4>{{ element.text }}</h4>
               <span>{{ element.textOverlay2 }}</span>
             </div>
 
@@ -62,8 +65,11 @@ export default {
     flex-direction: column;
     justify-content: center;
     padding: 0 20px;
-    h5 {
+    h4 {
       text-align: center;
+    }
+    span {
+      font-size: 18px;
     }
   }
   .circle {
@@ -95,6 +101,16 @@ export default {
   img {
     width: 100%;
   }
+  .sale {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    padding: 5px 10px;
+    color: white;
+    background-color: #3d6f42;
+    border-radius: 50%;
+    font-size: 20px;
+  }
 }
 .img-product:hover .overlay-product {
   display: block;
@@ -103,6 +119,7 @@ export default {
 .product-text {
   padding: 0 25px;
   margin-bottom: 35px;
+
   .scount {
     font-size: 12px;
     text-decoration: line-through;

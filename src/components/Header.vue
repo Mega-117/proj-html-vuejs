@@ -15,7 +15,7 @@
             <input class="bg-grey-input" type="text" placeholder="Search..." />
           </div>
           <div>
-            <h5 class="d-inline-block pe-2">Questions?</h5>
+            <h5 class="d-inline-block pe-2 m-0">Questions?</h5>
             <span>Call us: 1800123.4567</span>
           </div>
           <div>

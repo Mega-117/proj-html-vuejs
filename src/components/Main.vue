@@ -260,6 +260,7 @@ export default {
         },
         {
           textUp: "All-time-best sellers",
+          textSmall: "text-green",
           title: "Items everyone loves",
           text: "",
           align: "d-flex justify-content-between align-items-center",
@@ -390,6 +391,7 @@ export default {
           price2: "- $26.00",
           alignText: "text-center",
           textOverlay: "VIEW CART",
+          sale: false,
         },
         {
           src: require("@/assets/product-2-400x400.jpg"),
@@ -397,6 +399,7 @@ export default {
           price: "$29.00",
           alignText: "text-center",
           textOverlay: "VIEW CART",
+          sale: false,
         },
         {
           src: require("@/assets/product-3-400x400.jpg"),
@@ -405,6 +408,7 @@ export default {
           scount: "$29.00",
           alignText: "text-center",
           textOverlay: "VIEW CART",
+          sale: true,
         },
         {
           src: require("@/assets/product-4-400x400.jpg"),
@@ -412,6 +416,7 @@ export default {
           price: "$29.00",
           alignText: "text-center",
           textOverlay: "VIEW CART",
+          sale: false,
         },
         {
           src: require("@/assets/product-5-400x400.jpg"),
@@ -419,6 +424,7 @@ export default {
           price: "$35.00",
           alignText: "text-center",
           textOverlay: "VIEW CART",
+          sale: false,
         },
         {
           src: require("@/assets/product-10-400x400.jpg"),
@@ -426,6 +432,7 @@ export default {
           price: "$16.00",
           alignText: "text-center",
           textOverlay: "VIEW CART",
+          sale: false,
         },
       ],
     };

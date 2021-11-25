@@ -142,6 +142,9 @@ export default {
   a:hover {
     color: white;
   }
+  h3 {
+    margin-bottom: 15px;
+  }
 }
 .logo-footer {
   margin-bottom: 50px;
@@ -221,6 +224,9 @@ ul.list-footer {
         position: absolute;
         bottom: 0;
         right: 0;
+        i {
+          color: black;
+        }
       }
     }
   }
